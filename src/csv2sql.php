@@ -16,7 +16,6 @@ if(!file_exists($file_name)){
 }
 
 $fp = fopen($file_name, 'r');
-var_dump($fp);
 
 $lineno = 0;
 $header = [];
