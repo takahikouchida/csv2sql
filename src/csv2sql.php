@@ -81,7 +81,7 @@ echo $create_table_sql."\n";
 //$insert_sql = 'INSERT into h28('."\n".implode(',',$header)."\n".' ) '."\n".'VALUES('."\n".implode(',',$body[1])."\n".');';
 foreach($body as $item)
 	{
-	$insert_sql = 'INSERT into ".$table_name."('."\n";
+	$insert_sql = 'INSERT into '.$table_name.'('."\n";
 	for($i = 0;$i < count($header); $i++) {
 		if($i) {
 			$insert_sql .= ",";
